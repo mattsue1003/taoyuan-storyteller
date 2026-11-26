@@ -1144,7 +1144,7 @@ function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTi
 async function copy(text){try{await navigator.clipboard.writeText(text);toast("已複製")}catch(e){toast("無法自動複製，請手動選取文字")}}
 
 /* ---------- audio ---------- */
-const AUDIO=new Set(["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"]);
+const AUDIO=new Set(["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"]);
 const HOST={m:{name:"阿城伯",badge:"城"},f:{name:"小晴",badge:"晴"}};
 function parseStory(text){
   return text.split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{
